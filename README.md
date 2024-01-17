@@ -66,11 +66,15 @@ Delete a Book:
 
 Endpoint: DELETE api/v1/bookstore/deleteBook/{id}
 Description: Delete a specific book from the store.
+
+User need to login-in before he can have access to the create book, edit, delete and update book
+
 Database
 The application uses a MySQL database for data storage. JPA (Java Persistence API) is employed for database interactions. The provided application.properties file includes database configuration.
 
 Business Logic
 The API includes business logic to manage the availability status of books. This allows for efficient tracking of book availability.
+
 
 Testing
 Unit tests are implemented to ensure the correctness of the application. These tests cover various scenarios, including CRUD operations and business logic.
@@ -83,6 +87,8 @@ Copy code
 Save to grepper
 Documentation
 API documentation is crucial for developers and users to understand how to interact with the application. Documentation for this project can be found in the docs directory. Link to API Documentation
+http://localhost:8081/swagger-ui/index.html  -swagger documentation
+https://documenter.getpostman.com/view/22488992/2s9YsQ8Vfb -PostMan documentation
 
 Error Handling
 Proper error handling is implemented throughout the API. The application returns appropriate HTTP status codes and error messages to indicate the result of each request.
